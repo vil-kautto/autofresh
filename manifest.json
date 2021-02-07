@@ -1,20 +1,26 @@
 {
 
   "manifest_version": 2,
-  "name": "Freefresh",
-  "version": "1.0",
+  "name": "Autofresh",
+  "version": "0.1",
 
-  "description": "Automatically refreshes current page wiht customizable duration",
+  "description": "Automatically refreshes current page with customizable duration",
 
   "icons": {
-    "48": "icons/border-48.png"
+    "96": "icons/refresh-small.png"
   },
 
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*"],
-      "js": ["borderify.js"]
+      "matches": ["<all_urls>"],
+      "js": ["./src/autofresh.js"]
     }
-  ]
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/refresh-small.png",
+    "default_title": "Autofresh",
+    "default_popup": "src/settings.html"
+  }
 
 }

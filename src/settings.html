@@ -1,0 +1,30 @@
+<html>   
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="settings.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src='./autofresh.js'></script>
+  </head>
+
+<body>
+  <div id="popup-content">
+      <p>Autofresh settings</p>
+      <button class="refresh">Refresh</button>
+    <div class="settings">
+        <input type="checkbox" value="whitelist-page">Enabled on this page</option>
+        <br>
+        <input type="checkbox" value="whitelist-domain">Enabled on this domain</option>
+    </div>
+    <div>
+        <label for="delay">Refresh delay (in seconds):</label>
+        <input type="number" id="delay" name="delay" min="1" max="4294967296">
+        <p class="error"></p>
+    </div>
+    <button onclick="saveSettings">Save settings</button>
+  </div>
+  
+  
+</body>
+
+</html>
