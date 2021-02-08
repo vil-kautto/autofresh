@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.popup-content * {
+    width: 250px;
+}
+
+h1, h2, p, input, label, button {
+    font-family: 'Open Sans', sans-serif;
+}

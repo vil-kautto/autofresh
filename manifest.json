@@ -10,17 +10,21 @@
     "96": "icons/refresh-small.png"
   },
 
+  "permissions": [
+    "activeTab", "storage"
+  ],
+
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["./src/autofresh.js"]
+      "js": ["scripts/autofresh.js", "popup/popup.js"]
     }
   ],
 
   "browser_action": {
     "default_icon": "icons/refresh-small.png",
     "default_title": "Autofresh",
-    "default_popup": "src/settings.html"
+    "default_popup": "popup/popup.html"
   }
 
 }
